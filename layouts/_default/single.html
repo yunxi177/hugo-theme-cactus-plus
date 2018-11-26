@@ -43,6 +43,10 @@
                 {{ partial "disqus.html" . }}
             {{ end }}
 
+	    {{ if .Site.Params.entableGitment }}
+                {{ partial "gitment.html" . }}
+            {{ end }}
+
             {{ if .Site.Params.showLatestPosts }}
                 {{ partial "latest-posts.html" . }}
             {{ end }}
